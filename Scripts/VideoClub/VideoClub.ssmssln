@@ -1,14 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # SQL Server Management Studio Solution File, Format Version 12.00
-Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "VideoClub", "VideoClub\VideoClub.ssmssqlproj", "{B34FF43A-84D1-46C1-A352-0FA23EF0C7CC}"
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "VideoClub", "VideoClub\VideoClub.ssmssqlproj", "{BF4DECBF-9FF3-4E81-8B63-33196445A5C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B34FF43A-84D1-46C1-A352-0FA23EF0C7CC}.Default|Default.ActiveCfg = Default
+		{BF4DECBF-9FF3-4E81-8B63-33196445A5C6}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

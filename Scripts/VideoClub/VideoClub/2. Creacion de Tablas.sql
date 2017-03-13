@@ -3,27 +3,37 @@ go
 
 create table SOCIOS
 (
-	IdSocio int not null,--pk
-	Nombre varchar(30) not null,
-	direccion varchar(50) not null,
-	telefono varchar(10),
-	importe decimal(15,2) not null
-	moroso char(2) not null --check
+	Id_Socio int not null,
+	Nombre varchar(50) not null,
+	Direccion varchar(30) not null,
+	Importe decimal(15,2) not null,
+	moroso char(2),
 )
 
 create table ARTICULOS
 (
-	IdArticulos int not null,--pk
-	Descripcion char (50),
-	precio decimal(15,2)not null,
-	existencia int not null,
-	tipo varchar(15) --check
+	Id_Articulo int not null,
+	Nombre varchar(30) not null,
+	Descripcion varchar(100),
+	Precio decimal(10,2) not null,
+	Existencia int not null,
+	tipo varchar(20) not null
 )
 
---Llaves primarias
-alter table SOCIOS add constraint pk_socios primary key (Idsocio)
-alter table ARTICULOS add constraint pk__articulos primary key(IdArticulos)
+create table RENTAS
+(
+	Id_Rentas int not null,
+	Id_Socio int not null,
+	Id_Articulos int not null,
+	Fecha datetime not null,
+	Importe decimal (12,2)
+)
 
---check
-alter table SOCIOS add constraint moroso check(moroso in ('SI','NO'))
-alter table ARTICULOS add constraint tipo check(tipo in('PELICULA','SURVENIR','COMESTIBLE'))
+create table VENTAS
+(
+	Id_Ventas int not null,
+	Id_Socio int not null,
+	Id_Articulos int not  null,
+	Importe_Ven decimal (15,2) not null,
+	Fecha datetime not null
+)

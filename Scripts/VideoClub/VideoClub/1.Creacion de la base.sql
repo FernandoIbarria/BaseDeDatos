@@ -1,5 +1,2 @@
-Create DataBase VideoClub
+create database VideoClub
 go
-
-
---Esta es una prueba borrar este mensaje despues
